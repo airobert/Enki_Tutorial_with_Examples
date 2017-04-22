@@ -1,6 +1,7 @@
 #include <enki/PhysicalEngine.h>
 #include <enki/robots/e-puck/EPuck.h>
 #include <iostream>
+#include <viewer/Viewer.h>
 
 int main(int argc, char *argv[])
 {
@@ -20,6 +21,7 @@ int main(int argc, char *argv[])
 	const double amount = 9;
 	const double radius = 5;
 	const double height = 20;
+	// std::cout <<"M_PI = " <<M_PI <<std::endl;
 	for (double a = 0; a < 2*M_PI; a += 2*M_PI/amount)
 		p.push_back(Enki::Point(radius * cos(a), radius * sin(a)));
 	Enki::PhysicalObject* o = new Enki::PhysicalObject;
@@ -34,7 +36,8 @@ int main(int argc, char *argv[])
 	{
 		// step of 50 ms
 		world.step(0.05);
-		std::cout << "E-puck pos is (" << ePuck->pos.x << "," << ePuck->pos.y << ")" << std::endl;
+		std::cout << "E-puck pos is (" << ePuck->pos.x 
+		<< "," << ePuck->pos.y << ")" << std::endl;
 	}
 }
 
