@@ -1,4 +1,4 @@
-# enki
+# Enki Tutorial with Examples
 This is a very simple tutorial for Enki robot simulation. 
 
 Please see the PDF in the repository for details. 
