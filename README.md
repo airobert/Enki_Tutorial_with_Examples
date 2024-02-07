@@ -1,6 +1,8 @@
 # enki
-robot simulation with enki
+This is a very simple tutorial for Enki robot simulation. 
 
-Test 1:
+Please see the PDF in the repository for details. 
+
+Contact: Shuai Wang (shuai.wang@vu.nl).
 
 
